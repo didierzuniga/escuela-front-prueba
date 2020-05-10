@@ -1,0 +1,145 @@
+@import "./Vars.scss";
+
+body {
+    background-color: $background-color;
+    color: black;
+    font-family: $theme-font;
+    margin: 0;
+}
+
+.Main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 45px 1fr;
+    height: 100vh;
+}
+
+.Main-header {
+    grid-row: 1 / 2;
+}
+
+.Main-content {
+    grid-row: 2 / 3;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.Input__group {
+    display: inline-block;
+    margin: 5px;
+}
+
+.Input__container {
+    margin: 20px 20px;
+}
+
+.Input {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #d4d7dd;
+    border-radius: 25px;
+    color: black;
+    font-size: 16px;
+    height: 40px;
+    outline: none;
+    padding: 0 20px;
+}
+
+.Input:focus {
+    box-shadow: 0 0 7px rgba(255, 255, 255, 1);
+}
+
+.Button__send {
+    background-color: rgba($color: $main-color, $alpha: 0.8);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    height: 40px;
+    letter-spacing: 0;
+    outline: none;
+    width: 100%;
+}
+
+.Button__send:hover {
+    background-color: rgba($color: $button-bgcolor, $alpha: 1.0)
+}
+
+.Button__calculate {
+    background-color: rgba($color: $main-color, $alpha: 0.8);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 18px;
+    height: 40px;
+    letter-spacing: 0;
+    justify-content: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    outline: none;
+    width: 150px;
+}
+
+.Button__calculate:hover {
+    cursor: pointer;
+    background-color: rgba($color: $main-color, $alpha: 1.0)
+}
+
+.Button__back {
+    position: absolute;
+    background-color: rgba($color: $color-line, $alpha: 0.8);
+    border: none;
+    border-radius: 25px;
+    height: 35px;
+    letter-spacing: 0;
+    justify-content: right;
+    margin-top: 10px;
+    margin-left: 10px;
+    outline: none;
+    padding: 2px;
+}
+
+.Button__back:hover {
+    cursor: pointer;
+    background-color: rgba($color: $color-line, $alpha: 1.0)
+}
+
+.Button__signout {
+    position: absolute;
+    background-color: rgba($color: #eb6383, $alpha: 0.8);
+    border: none;
+    border-radius: 25px;
+    height: 35px;
+    letter-spacing: 0;
+    justify-content: right;
+    margin-top: 70px;
+    margin-left: 10px;
+    outline: none;
+    padding: 2px;
+}
+
+.Button__signout:hover {
+    cursor: pointer;
+    background-color: rgba($color: #eb6383, $alpha: 1.0)
+}
+
+
+
+
+.shadow-below {
+    -webkit-box-shadow: -1px 10px 5px -8px rgba(0,0,0,0.15);
+    -moz-box-shadow: -1px 10px 5px -8px rgba(0,0,0,0.15);
+    box-shadow: -1px 10px 5px -8px rgba(0,0,0,0.15);
+}
+
+.Form-container {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 70%;
+}
+
+.Font__warning {
+    color: red;
+}

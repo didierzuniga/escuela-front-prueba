@@ -1,0 +1,32 @@
+@import "./Vars.scss";
+
+.Signin__container {
+  display: flex;
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.Signin__form {
+  border: 1px solid $main-color;
+  border-radius: 25px;
+	display: flex;
+  grid-column: 1 / 2;
+  height: 200px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 40px 30px;
+  width: 500px;
+}
+
+form div {
+  display: block;
+  margin-bottom: 15px;
+}
+
+form div input {
+  width: 300px;
+}
+
+.Signin__hero {
+  background-color: lightgrey;
+}

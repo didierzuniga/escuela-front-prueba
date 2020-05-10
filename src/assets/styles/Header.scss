@@ -1,0 +1,48 @@
+@import "./Vars.scss";
+
+.Header {
+  background-color: $main-color;
+  color: white;
+  display: inline-flex;
+  justify-content: space-between;
+  min-height: 45px;
+}
+
+.Header div {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.Header a {
+  color: white;
+  text-decoration: none;
+}
+
+.Header img {
+  height: 28px;
+  width: 28px;
+  margin: 1px 10px;
+}
+
+.Header img:hover {
+  cursor: pointer;
+}
+
+.Header__usernamescreen {
+  align-items: center;
+  color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-right: 15px;
+}
+
+.Header__icon-group {
+  display: block;
+}
+
+.Header__alt-text {
+  font-size: 12px;
+}

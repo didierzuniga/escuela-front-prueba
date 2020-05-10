@@ -1,0 +1,83 @@
+@import "./Vars.scss";
+
+.StudentCourseDetail__container {
+  background-color: $main-color;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 1fr;
+  height: 100vh;
+}
+
+.StudentCourseDetail__course-name {
+  background-color: $background-color;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  padding: 0 90px;
+}
+
+.StudentCourseDetail__score {
+  background-color: $background-color;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  padding: 0 90px;
+  text-align: right;
+}
+
+.StudentCourseDetail__classmates {
+  background-color: $background-color;
+  border-right: 2px solid $color-line;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  padding: 0 90px;
+}
+
+.StudentCourseDetail__item-classmates {
+  border-bottom: 1px solid $color-line;
+}
+
+.StudentCourseDetail__module {
+  background-color: $background-color;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  padding: 0 30px;
+}
+
+.StudentCourseDetail__module-list {
+  display: flex;
+  color: white;
+  background-color: rgba($color: $color-line, $alpha: 0.7);
+  border-radius: 10px;
+  height: 35px;
+  margin: 5px 0;
+  padding: 5px 10px;
+  justify-content: space-between;
+}
+
+.StudentCourseDetail__module-list:hover {
+  cursor: pointer;
+  background-color: rgba($color: $color-line, $alpha: 1);
+}
+
+.StudentCourseDetail__button-calculate {
+  background-color: rgba($color: $main-color, $alpha: 0.8);
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 14px;
+  height: 40px;
+  letter-spacing: 0;
+  justify-content: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  outline: none;
+  width: 150px;
+  -webkit-box-shadow: 0px 3px 25px -16px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 25px -16px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 25px -16px rgba(0,0,0,0.75);
+}
+
+.StudentCourseDetail__button-calculate:hover {
+  cursor: pointer;
+  background-color: rgba($color: $main-color, $alpha: 1.0)
+}
