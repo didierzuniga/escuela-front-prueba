@@ -222,7 +222,7 @@ const TeacherCourseDetail = (props) => {
                     </div>
                   </div>
                 );
-              }) : <h2>Sin materias registradas</h2>
+              }) : <h2>Click en el estudiante para ver materias</h2>
             }
           </div>
         </div>
